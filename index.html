@@ -6,7 +6,35 @@
 <title>3Fase</title>
 <meta name="description" content="3Fase — Cantautori, produttori, dj. Visita il sito ufficiale.">
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+  /* Font autoospitati: nessuna chiamata a server esterni. */
+  @font-face{
+    font-display:swap;
+    font-family:'EB Garamond';
+    font-style:normal;
+    font-weight:400;
+    src:url('fonts/eb-garamond-v33-latin/eb-garamond-v33-latin-regular.woff2') format('woff2');
+  }
+  @font-face{
+    font-display:swap;
+    font-family:'EB Garamond';
+    font-style:italic;
+    font-weight:400;
+    src:url('fonts/eb-garamond-v33-latin/eb-garamond-v33-latin-italic.woff2') format('woff2');
+  }
+  @font-face{
+    font-display:swap;
+    font-family:'EB Garamond';
+    font-style:normal;
+    font-weight:700;
+    src:url('fonts/eb-garamond-v33-latin/eb-garamond-v33-latin-700.woff2') format('woff2');
+  }
+  @font-face{
+    font-display:swap;
+    font-family:'EB Garamond';
+    font-style:italic;
+    font-weight:700;
+    src:url('fonts/eb-garamond-v33-latin/eb-garamond-v33-latin-700italic.woff2') format('woff2');
+  }
 
   *{ box-sizing:border-box; margin:0; padding:0; }
 
@@ -31,9 +59,6 @@
     text-align:center;
   }
 
-  /* Immagine di sfondo come <img> con object-fit:cover: garantisce sempre
-     copertura totale del banner, a qualunque proporzione dello schermo,
-     evitando spazi vuoti (bug del vecchio background-size animato). */
   .banner-img{
     position:absolute;
     inset:0;
@@ -179,7 +204,7 @@
   </div>
 </div>
 <footer>
-  <p class="footer-note">Questo sito non utilizza cookie né strumenti di tracciamento. Il pulsante sopra rimanda al sito ufficiale su Google Sites.</p>
+  <p class="footer-note">Questo sito non utilizza cookie né strumenti di tracciamento e non effettua chiamate a server esterni. Il pulsante sopra rimanda al sito ufficiale su Google Sites.</p>
   <p>&copy; <span id="year"></span> 3Fase — <a href="mailto:aiskxx@yahoo.it">aiskxx@yahoo.it</a></p>
 </footer>
 <script>
